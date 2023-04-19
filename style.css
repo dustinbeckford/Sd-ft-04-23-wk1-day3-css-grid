@@ -1,0 +1,57 @@
+h1{
+    color:red
+}
+
+.imposter{
+    height: 100px;
+    width: 100%;
+    border: 2px solid red;
+    grid-column: 2/4;
+}
+
+.grid-box {
+    height: 100px;
+    width: 100%;
+    border: 2px solid pink;
+}
+
+.grid-container{
+display: grid;
+grid-template-columns: 100px 1fr 
+100px;
+grid-template-rows: auto;
+gap: 10px;
+}
+
+.grid-container-2{
+    boarder: 2px solid blue;
+    display: grid;
+    grid-template-areas: 
+    "header hearder header"
+    "siderbar body body"
+    "sidebar footer footer"
+}
+
+.header{
+    grid-area: header;
+    border: 2px solid black;
+    height: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    border:2px solid red;
+   height: 100px;
+}
+
+.sidebar{
+    grid-area: side;
+    border: 2px solid red;
+    height: 100%;
+}
+
+.body{
+    grid-area: body;
+    border: 2px solid yellow;
+    height: 20px;
+}
