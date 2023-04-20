@@ -1,0 +1,32 @@
+body {
+  margin: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+.grid-container {
+  display: grid;
+  margin: 2px;
+  gap: 5px;
+  grid-template-columns: auto;
+  max-width: 100%;
+  max-height: 100%;
+  grid-auto-rows: 240px;
+  grid-auto-flow: column;
+  object-fit: cover;
+}
+.card {
+  background-size: cover;
+}
+
+.card-tall {
+  grid-row: span 2 / auto;
+  grid-column: span 2 / auto;
+  image-resolution: auto%;
+}
+
+.card-wide {
+  grid-column: span 4 / auto;
+  grid-row: span 4 / auto;
+  image-resolution: auto%;
+}
